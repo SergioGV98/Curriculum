@@ -8,6 +8,7 @@
 :root {
     --titulos: white;
     --textoSeleccionado: rgba(31, 1, 1, 0.774);
+    --tituloSeleccionado: tomato;
     --titulosResaltados: #f9004d;
     --texto: rgb(226, 226, 226);
     --background: #252525;
