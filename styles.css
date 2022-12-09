@@ -17,7 +17,7 @@
 
 /* Estilos para pantallas de ordenador con anchura entre 601px y 1200px */
 @media (min-width: 601px) and (max-width: 1200px) {
-    body {
+    p {
       font-size: 16px;
     }
     h1 {
@@ -28,7 +28,7 @@
 /* Estilos para dispositivos móviles con anchura entre 0px y 600px */
 
 @media (min-width: 0px) and (max-width: 600px) {
-    body {
+    p {
       font-size: 14px;
     }
     h1 {
