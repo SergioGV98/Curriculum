@@ -7,12 +7,11 @@
 
 :root {
     --titulos: white;
-    --tituloSeleccionado: pink;
+    --textoSeleccionado: rgba(31, 1, 1, 0.774);
     --titulosResaltados: #f9004d;
-    --texto: #fcfc;
+    --texto: rgb(226, 226, 226);
     --background: #252525;
     --background2: #202020;
-    --textoSeleccionado: #666363;
 }
 
 /* Estilos para pantallas de ordenador con anchura entre 601px y 1200px */
@@ -58,6 +57,13 @@
 
 p:hover {
     background-color: var(--textoSeleccionado);
+}
+
+
+h2 {
+    background-image: url(images/photogif.gif);
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
@@ -132,7 +138,7 @@ nav ul li a:hover {
 
 .curriculum {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -254,12 +260,10 @@ span {
 }
 
 #studieslist {
-    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background);
-    border-style: solid;
+    background-color: var(--background2);
 }
 
 #studiesicon {
@@ -283,12 +287,10 @@ span {
 }
 
 #experiencelist {
-    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background);
-    border-style: solid;
+    background-color: var(--background2);
 }
 
 #experienceicon {
@@ -313,12 +315,10 @@ span {
 
 
 #programlist {
-    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background);
-    border-style: solid;
+    background-color: var(--background2);
 }
 
 #programicon {
