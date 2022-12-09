@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --titulos: white;
+    --tituloSeleccionado: pink;
+    --titulosResaltados: #f9004d;
+    --texto: #fcfc;
+    --background: #252525;
+    --background2: #202020;
+    --textoSeleccionado: #666363;
+}
+
+/* Estilos para pantallas de ordenador con anchura entre 601px y 1200px */
+@media (min-width: 601px) and (max-width: 1200px) {
+    body {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+}
+  
+/* Estilos para dispositivos móviles con anchura entre 0px y 600px */
+
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+}
+
+/* Portafoto Inicio */
+@media screen and (orientation: landscape){
+
+    #portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
+    
+    #portaFoto {
+        background-color: var(--background2);
+        width: 50vw;
+        height: 50vh;
+        display: block;
+    }
+}
+
+/* Portafoto Fin */
+
+/* ********************** H1, H2, H3... start ********************** */
+
+p:hover {
+    background-color: var(--textoSeleccionado);
+}
+
+h1 {
+    color: var(--titulos);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h1::first-line {
+    text-transform: uppercase;
+}
+
+h3 {
+    color: var(--titulos);
+    font-size: 25px;
+    margin-bottom: 50px;
+    padding-left: 25%;
+}
+
+h3::selection {
+    color: gold;
+    background: red;
+}
+
+h4 {
+    color: var(--titulosResaltados);
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+h5::first-letter {
+    font-size: 150%;
+}
+
+/* ********************** Section start ********************** */
+.section-start {
+    height: 100vh;
+    font-size: 25px;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: var(--titulos);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: var(--titulosResaltados);
+    transition: .4s;
+}
+
+.curriculum {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: var(--titulosResaltados);
+}
+
+.content-start {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50);
+
+}
+
+#Inicio {
+    color: var(--tituloSeleccionado);
+}
+
+/* ********************** Section end ********************** */
+/* ********************** About start ********************** */
+
+.section-about {
+    height: 100vh;
+    font-size: 25px;
+    width: 100%;
+    background-color: var(--background);
+    background-size: cover;
+    background-position: center;
+}
+
+#about {
+    width: 100%;
+    padding: 200px 0px;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+#photo {
+    width: 45%;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: var(--titulos);
+    font-size: 75px;
+    margin-left: 30%;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.about-text h5 {
+    color: var(--titulos);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    margin-left: 30%;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: var(--texto);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-left: 30%;
+    margin-bottom: 45px;
+}
+
+/* ********************** About end ********************** */
+/* ********************** Studies, experience, programs start ********************** */
+.section-studies {
+    height: 100vh;
+    font-size: 25px;
+    width: 100%;
+    background-color: var(--background2);
+    background-size: cover;
+    background-position: center;
+}
+
+#studies {
+    width: 100%;
+    padding: 200px 0px;
+}
+
+.main-studies {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.about-studies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#studies h2 {
+    color: var(--titulos);
+    font-size: 75px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#studieslist {
+    color: white;
+    text-align: center;
+    width: 30%;
+    height: 50%;
+    background-color: var(--background);
+    border-style: solid;
+}
+
+#studiesicon {
+    width: 25%;
+}
+
+#studieslist h5 {
+    color: var(--titulos);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+#studieslist p {
+    color: var(--texto);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+#experiencelist {
+    color: white;
+    text-align: center;
+    width: 30%;
+    height: 50%;
+    background-color: var(--background);
+    border-style: solid;
+}
+
+#experienceicon {
+    width: 25%;
+}
+
+#experiencelist h5 {
+    color: var(--titulos);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+#experiencelist p {
+    color: var(--texto);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+#programlist {
+    color: white;
+    text-align: center;
+    width: 30%;
+    height: 50%;
+    background-color: var(--background);
+    border-style: solid;
+}
+
+#programicon {
+    width: 25%;
+}
+
+#programlist h5 {
+    color: var(--titulos);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+#programlist p {
+    color: var(--texto);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* ********************** Studies, experience, programs end ********************** */
+/* ********************** Section Contact ********************** */
+.section-contact {
+    height: 100vh;
+    font-size: 25px;
+    width: 100%;
+    background-color: var(--background2);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    width: 100%;
+    padding: 200px 0px;
+}
+
+.main-contact {
+    margin-left: 13%;
+    display: flex;
+}
+
+.fotodemierda {
+    margin-left: 3vh;
+}
+
+#photo2 {
+    width: 90%;
+}
+
+.contact-text {
+    width: 1150px;
+}
+
+.contact-text h2 {
+    color: var(--titulos);
+    font-size: 75px;
+    margin-left: 7%;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.contact-text h5 {
+    color: var(--titulos);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    margin-left: 8%;
+}
+
+.contact-text p {
+    color: var(--texto);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-bottom: 45px;
+
+}
+
+#contactameMenu {
+    color: var(--tituloSeleccionado);
+}
+
+/* ********************** Contact end ********************** */
