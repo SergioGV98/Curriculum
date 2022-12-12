@@ -7,17 +7,17 @@
 
 :root {
     --titulos: white;
-    --textoSeleccionado: rgba(31, 1, 1, 0.774);
-    --tituloSeleccionado: tomato;
+    --tituloSeleccionado: pink;
     --titulosResaltados: #f9004d;
-    --texto: rgb(226, 226, 226);
+    --texto: #fcfc;
     --background: #252525;
     --background2: #202020;
+    --textoSeleccionado: #666363;
 }
 
 /* Estilos para pantallas de ordenador con anchura entre 601px y 1200px */
 @media (min-width: 601px) and (max-width: 1200px) {
-    p {
+    body {
       font-size: 16px;
     }
     h1 {
@@ -28,7 +28,7 @@
 /* Estilos para dispositivos móviles con anchura entre 0px y 600px */
 
 @media (min-width: 0px) and (max-width: 600px) {
-    p {
+    body {
       font-size: 14px;
     }
     h1 {
@@ -60,13 +60,6 @@ p:hover {
     background-color: var(--textoSeleccionado);
 }
 
-
-h2 {
-    background-image: url(images/photogif.gif);
-    background-size: cover;
-    background-position: center;
-}
-
 h1 {
     color: var(--titulos);
     margin: 20px 0px 20px;
@@ -75,6 +68,12 @@ h1 {
 
 h1::first-line {
     text-transform: uppercase;
+}
+
+h2{
+    background-image: url(images/fc.gif);
+    background-size: cover;
+    background-position: center;
 }
 
 h3 {
@@ -137,13 +136,6 @@ nav ul li a:hover {
     transition: .4s;
 }
 
-.curriculum {
-    color: white;
-    font-size: 40px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
 span {
     color: var(--titulosResaltados);
 }
@@ -167,6 +159,7 @@ span {
     height: 100vh;
     font-size: 25px;
     width: 100%;
+    padding-bottom: 60%;
     background-color: var(--background);
     background-size: cover;
     background-position: center;
@@ -231,14 +224,14 @@ span {
     height: 100vh;
     font-size: 25px;
     width: 100%;
-    background-color: var(--background2);
-    background-size: cover;
-    background-position: center;
 }
 
 #studies {
     width: 100%;
     padding: 200px 0px;
+    background-color: var(--background2);
+    background-size: cover;
+    background-position: center;
 }
 
 .main-studies {
@@ -254,17 +247,22 @@ span {
 }
 
 #studies h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
     color: var(--titulos);
     font-size: 75px;
     margin-bottom: 50px;
     text-align: center;
+    margin-top: -10%;
 }
 
 #studieslist {
+    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background2);
+    background-color: var(--background);
+    border-style: solid;
 }
 
 #studiesicon {
@@ -288,10 +286,12 @@ span {
 }
 
 #experiencelist {
+    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background2);
+    background-color: var(--background);
+    border-style: solid;
 }
 
 #experienceicon {
@@ -316,10 +316,12 @@ span {
 
 
 #programlist {
+    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background2);
+    background-color: var(--background);
+    border-style: solid;
 }
 
 #programicon {
@@ -348,14 +350,14 @@ span {
     height: 100vh;
     font-size: 25px;
     width: 100%;
-    background-color: var(--background2);
-    background-size: cover;
-    background-position: center;
 }
 
 #contact {
     width: 100%;
     padding: 200px 0px;
+    background-color: var(--background2);
+    background-size: cover;
+    background-position: center;
 }
 
 .main-contact {
