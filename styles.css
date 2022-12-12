@@ -257,12 +257,10 @@ span {
 }
 
 #studieslist {
-    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background);
-    border-style: solid;
+    background-color: var(--background2);
 }
 
 #studiesicon {
@@ -286,12 +284,10 @@ span {
 }
 
 #experiencelist {
-    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background);
-    border-style: solid;
+    background-color: var(--background2);
 }
 
 #experienceicon {
@@ -316,12 +312,10 @@ span {
 
 
 #programlist {
-    color: white;
     text-align: center;
     width: 30%;
     height: 50%;
-    background-color: var(--background);
-    border-style: solid;
+    background-color: var(--background2);
 }
 
 #programicon {
